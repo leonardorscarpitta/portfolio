@@ -41,6 +41,10 @@ body {
     justify-items: center;
     padding: 2rem 1rem;
     grid-area: header;
+    position: sticky;
+    top: 0px;
+    background-color: var(--background-color);
+    opacity: 0.8;
 
     grid-column-start: 1;
     grid-column-end: 4;
@@ -100,7 +104,7 @@ body {
 }
 
 /* .main__row {
-} */
+}  */
 
 .main__row__titulo,
 .main__portfolio__titulo {
@@ -120,10 +124,10 @@ body {
 .main__row__icone,
 .main__portfolio__icone {
     width: 30rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
-.main__row__destaques {
+.main__linguagens__destaques {
     font-weight: 800;
     font-family: var(--fonte-principal);
     color: var(--cor-primaria);
@@ -132,6 +136,7 @@ body {
 }
 
 .main__linguagens {
+    margin-top: 2rem;
     display: grid;
     grid-template-areas: 
                         "tituloLU tituloLU tituloLU"
@@ -154,14 +159,15 @@ body {
 
 .logoLinguagem {
     width: 5rem;
-    margin-top: 1rem;
+    margin-top: 2rem;
 }
 
-/* .main__portfolio {
-} */
+#main__portfolio {
+    margin-top: 2rem;
+}
 
 .main__portfolio__projetos {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     display: grid;
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 1fr 1fr;
