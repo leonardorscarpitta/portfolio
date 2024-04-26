@@ -1,0 +1,56 @@
+@import url(reset.css);
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root {
+    /* PALETA DE CORES */
+    --background-color: #19142A;
+    --font-color: #D9D9DC;
+    /* FONTES DO PORTFOLIO */
+    --fonte-principal: "Roboto", sans-serif;
+}
+
+body {
+    background-color: var(--background-color);
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 2rem 1rem;
+}
+
+.cabecalho__titulo {
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+    text-transform: uppercase;
+    color: var(--font-color);
+}
+
+.cabecalho__menu {
+    display: flex;
+    color: var(--font-color);
+}
+
+.cabecalho__menu__item {
+    font-family: var(--fonte-principal);
+    margin: 0 1rem;
+}
+
+.cabecalho__menu__item a {
+	font-weight: 300;
+	text-decoration: none;
+    color: var(--font-color);
+}
+
+.cabecalho__curriculo {
+    border-radius: 16px;
+    background-color: #7B7CF1;
+    padding: 1rem;
+    border: none;
+    font-weight: 800;
+    color: var(--font-color);
+}
