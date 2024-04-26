@@ -5,45 +5,67 @@
 :root {
     /* PALETA DE CORES */
     --background-color: #19142A;
-    --font-color: #D9D9DC;
+    --cor-primaria: #D9D9DC;
+    --cor-secundaria: #6F6C7A;
     /* FONTES DO PORTFOLIO */
     --fonte-principal: "Roboto", sans-serif;
 }
+
+
+/* ESTILIZAÇÃO DO HEADER */
 
 body {
     background-color: var(--background-color);
 }
 
-.cabecalho {
+strong {
+    color: #CD0E10;
+    font-weight: 800;
+}
+
+#pagina {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
+}
+
+.cabecalho {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
     justify-content: center;
     align-items: center;
     justify-items: center;
     padding: 2rem 1rem;
+    grid-area: header;
+
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
 }
 
 .cabecalho__titulo {
     font-family: var(--fonte-principal);
+    font-size: 1.5rem;
     font-weight: 800;
     text-transform: uppercase;
-    color: var(--font-color);
+    color: var(--cor-primaria);
 }
 
 .cabecalho__menu {
     display: flex;
-    color: var(--font-color);
+    color: var(--cor-primaria);
 }
 
 .cabecalho__menu__item {
     font-family: var(--fonte-principal);
     margin: 0 1rem;
+    font-size: 1rem;
 }
 
 .cabecalho__menu__item a {
 	font-weight: 300;
 	text-decoration: none;
-    color: var(--font-color);
+    color: var(--cor-primaria);
 }
 
 .cabecalho__curriculo {
@@ -52,5 +74,53 @@ body {
     padding: 1rem;
     border: none;
     font-weight: 800;
-    color: var(--font-color);
+    color: var(--cor-primaria);
+}
+
+/* ESTILIZAÇÃO DO MAIN */
+.main {
+    display: grid;
+    grid-area: main;
+
+    margin: 3rem 0;
+    gap: 1rem;
+
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+/* .main__row,
+.main__linguagens {
+} */
+
+.main__row__titulo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-size: 2rem;
+}
+
+.main__row__texto {
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+}
+
+.main__row__icone {
+    width: 30rem;
+}
+
+.main__linguagens__destaques {
+    font-weight: 800;
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-size: 2rem;
+}
+
+/* .main__linguagens {
+} */
+
+#logoLinguagem {
+    width: 5rem;
 }
