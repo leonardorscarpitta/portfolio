@@ -1,12 +1,14 @@
 .main {
     display: grid;
+    padding: 2rem;
     grid-area: main;
-    text-align: center;
-    margin: 3rem 0;
     gap: 1rem;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
     gap: 4rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 /* .main__row {
@@ -48,7 +50,6 @@
     grid-template-areas: 
                         "tituloLU tituloLU tituloLU"
                         "html css js";
-    justify-content: space-evenly;
 }
 
 .linguagensUtilizadas {
@@ -76,35 +77,39 @@
 .main__portfolio__projetos {
     margin-top: 1.5rem;
     display: grid;
-    grid-template-rows: repeat(2, 3fr);
-    grid-template-columns: repeat(2, 3fr);
-    gap: 1rem;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    grid-template-areas: 
-                        "projeto1 projeto1"
-                        "projeto1 projeto1";
+    grid-template-columns: repeat(2, 50%);
+    grid-template-areas: "projeto1 projeto";
 }
 .projeto1 {
     grid-area: projeto1;
 }
 
 .main__portfolio__projetos__projeto {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    padding-top: 1rem;
+    display: grid;
+    grid-template-rows: 1fr 7rem 1fr;
+    grid-template-areas: 
+                        "titulo"
+                        "imagem"
+                        "botao";
+
+    padding: 1rem 0;
     border: 1px solid black;
     border-radius: 16px;
+    justify-items: center;
 }
+
 .main__portfolio__projetos__projeto__texto {
     color: var(--cor-primaria);
     font-family: var(--fonte-principal);
     font-weight: 800;
+    grid-area: titulo;
 }
+
 .main__portfolio__projetos__projeto__imagem {
     width: 7rem;
+    grid-area: imagem;
 }
+
 .main__portfolio__projetos__projeto__botao {
     background-color: #010409;
     font-size: 0.8rem;
@@ -113,4 +118,5 @@
     font-weight: 800;
     border-radius: 16px;
     border: none;
+    grid-area: botao;
 }
