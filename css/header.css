@@ -4,10 +4,7 @@
     align-items: center;
     justify-items: center;
     padding: 2rem 1rem;
-    grid-area: header;
-    position: sticky;
     top: 0px;
-    opacity: 0.8;
     grid-row: 1 / 2;
     grid-column: 1 / 4;
 }

@@ -7,44 +7,34 @@
 
 :root {
     /* PALETA DE CORES */
-    --background-color: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
-    --cor-primaria: #D9D9DC;
-    --cor-secundaria: #a9a7ad;
-    --cor-terciaria: #7f7e82;
+    --background-color: linear-gradient(91.7deg, rgb(50, 25, 79) -4.3%, rgb(122, 101, 149) 101.8%);
+    --cor-primaria: #FAF2E8;
+    --cor-secundaria: #CCC3BC;
+    --cor-terciaria: #FFFFFF;
     /* FONTES DO PORTFOLIO */
     --fonte-principal: "Roboto", sans-serif;
 }
-
-
-/* ESTILIZAÇÃO DO HEADER */
 
 body {
     background: var(--background-color);
 }
 
-hr {
-    border-color:#AAA;
-    box-sizing: border-box;
-    width: 100%;
-}
-
-#dark {
-    color: #CD0E10;
+strong {
     font-weight: 800;
 }
 
+#dark {
+    color: rgb(209, 209, 0);
+}
+
 #light {
-    color: #DBDBDB;
+    color: white;
     font-weight: 500;
 }
 
 #pagina {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-}
-
-* {
-    font-family: var(--fonte-principal);
+    grid-template-columns: 1fr 8fr 1fr;
 }
 
 * {
