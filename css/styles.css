@@ -6,7 +6,7 @@
     /* PALETA DE CORES */
     --background-color: #19142A;
     --cor-primaria: #D9D9DC;
-    --cor-secundaria: #6F6C7A;
+    --cor-secundaria: #a9a7ad;
     /* FONTES DO PORTFOLIO */
     --fonte-principal: "Roboto", sans-serif;
 }
@@ -45,11 +45,8 @@ body {
     top: 0px;
     background-color: var(--background-color);
     opacity: 0.8;
-
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 1;
-    grid-row-end: 2;
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
 }
 
 .cabecalho__titulo {
@@ -90,16 +87,11 @@ body {
 .main {
     display: grid;
     grid-area: main;
-
     text-align: center;
-
     margin: 3rem 0;
     gap: 1rem;
-
-    grid-column-start: 2;
-    grid-column-end: 3;
-    grid-row-start: 2;
-    grid-row-end: 3;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
     gap: 4rem;
 }
 
@@ -118,7 +110,8 @@ body {
     font-family: var(--fonte-principal);
     color: var(--cor-secundaria);
     font-size: 1rem;
-    margin-top: 0.5rem;
+    margin-top: 0.9rem;
+    word-spacing: 1px;
 }
 
 .main__row__icone,
@@ -167,12 +160,38 @@ body {
 }
 
 .main__portfolio__projetos {
+    border: 3px solid black;
+    border-radius: 16px;
     margin-top: 1.5rem;
     display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 3fr);
+    grid-template-columns: repeat(2, 3fr);
+    gap: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
     grid-template-areas: 
                         "projeto1 projeto2"
-                        "projeto3 projeto4"
-                        "projeto5 projeto6";
+                        "projeto3 projeto4";
+}
+.projeto1 {
+    grid-area: projeto1;
+}
+
+.main__portfolio__projetos__projeto {
+    width: 10%;
+    text-align: center;
+}
+.main__portfolio__projetos__projeto__texto {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+}
+.main__portfolio__projetos__projeto__imagem {
+    width: 7rem;
+}
+.main__portfolio__projetos__projeto__botao {
+    background-color: #010409;
+    color: var(--cor-primaria);
+    font-weight: 800;
+    border-radius: 16px;
+    border: none;
 }
