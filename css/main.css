@@ -1,0 +1,113 @@
+.main {
+    display: grid;
+    grid-area: main;
+    text-align: center;
+    margin: 3rem 0;
+    gap: 1rem;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    gap: 4rem;
+}
+
+/* .main__row {
+}  */
+
+.main__row__titulo,
+.main__portfolio__titulo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-size: 2rem;
+}
+
+.main__row__texto,
+.main__portfolio__texto {
+    font-family: var(--fonte-principal);
+    color: var(--cor-secundaria);
+    font-size: 1rem;
+    margin-top: 0.9rem;
+    word-spacing: 1px;
+}
+
+.main__row__icone,
+.main__portfolio__icone {
+    width: 30rem;
+    margin-top: 2rem;
+}
+
+.main__linguagens__destaques {
+    font-weight: 800;
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-size: 2rem;
+    grid-area: titulo;
+}
+
+.main__linguagens {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-areas: 
+                        "tituloLU tituloLU tituloLU"
+                        "html css js";
+    justify-content: space-evenly;
+}
+
+.linguagensUtilizadas {
+    grid-area: tituloLU;
+}
+.css {
+    grid-area: css;
+}
+.html {
+    grid-area: html;
+}
+.js {
+    grid-area: js;
+}
+
+.logoLinguagem {
+    width: 5rem;
+    margin-top: 2rem;
+}
+
+#main__portfolio {
+    margin-top: 2rem;
+}
+
+.main__portfolio__projetos {
+    border: 3px solid black;
+    border-radius: 16px;
+    margin-top: 1.5rem;
+    display: grid;
+    grid-template-rows: repeat(2, 3fr);
+    grid-template-columns: repeat(2, 3fr);
+    gap: 1rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    grid-template-areas: 
+                        "projeto1 projeto2"
+                        "projeto3 projeto4";
+}
+.projeto1 {
+    grid-area: projeto1;
+}
+
+.main__portfolio__projetos__projeto {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.main__portfolio__projetos__projeto__texto {
+    color: var(--cor-primaria);
+    font-family: var(--fonte-principal);
+    font-weight: 800;
+}
+.main__portfolio__projetos__projeto__imagem {
+    width: 7rem;
+}
+.main__portfolio__projetos__projeto__botao {
+    background-color: #010409;
+    color: var(--cor-primaria);
+    font-weight: 800;
+    border-radius: 16px;
+    border: none;
+}

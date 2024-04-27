@@ -1,0 +1,7 @@
+.rodape {
+    grid-area: rodape;
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    padding: 3rem 0;
+    /* background-color:  */
+}
