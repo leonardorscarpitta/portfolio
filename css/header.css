@@ -1,14 +1,12 @@
 .cabecalho {
     display: grid;
     grid-template-columns: 1fr 4fr 1fr;
-    justify-content: center;
     align-items: center;
     justify-items: center;
     padding: 2rem 1rem;
     grid-area: header;
     position: sticky;
     top: 0px;
-    background-color: var(--background-color);
     opacity: 0.8;
     grid-row: 1 / 2;
     grid-column: 1 / 4;
@@ -46,4 +44,8 @@
     font-family: var(--fonte-principal);
     font-weight: 800;
     color: var(--cor-primaria);
+}
+
+.cabecalho__curriculo:hover {
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }
