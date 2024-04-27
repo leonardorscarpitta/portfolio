@@ -3,5 +3,25 @@
     grid-row: 3 / 4;
     grid-column: 1 / 4;
     padding: 3rem 0;
+    display: grid;
+    text-align: center;
+    grid-template-areas: 
+                        "nome nome"
+                        "social social";
     /* background-color:  */
+}
+
+.rodape__titulo {
+    font-family: var(--fonte-principal);
+    color: var(--cor-primaria);
+    font-weight: 800;
+    grid-area: nome;
+}
+
+.rodape__social {
+    grid-area: social;
+}
+
+.rodape__social__icone {
+    width: 3rem;
 }
