@@ -22,13 +22,19 @@ body {
     background: var(--background-color);
 }
 
+hr {
+    border-color:#AAA;
+    box-sizing: border-box;
+    width: 100%;
+}
+
 #dark {
     color: #CD0E10;
     font-weight: 800;
 }
 
 #light {
-    color: #dbdbdb;
+    color: #DBDBDB;
     font-weight: 500;
 }
 
