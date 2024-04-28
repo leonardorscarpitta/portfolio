@@ -41,7 +41,7 @@
     grid-area: texto;
 }
 
-.main__row__icone {
+.main__row__foto {
     width: 30rem;
     grid-area: foto;
 }
@@ -87,7 +87,7 @@
     display: grid;
     grid-row: 2 / 3;
     grid-column: 1 / 4;
-    row-gap: 1.5rem;
+    row-gap: 1rem;
 }
 
 .main__portfolio__titulo {
@@ -118,15 +118,15 @@
 
 .main__portfolio__projetos__projeto {
     display: grid;
-    grid-template-rows: 1fr 7rem 1fr;
+    grid-template-rows: 7rem 1fr 1fr;
     grid-template-areas: 
-                        "titulo"
                         "imagem"
+                        "titulo"
                         "botao";
 
     padding: 1rem 0;
-    border: 1px solid black;
-    border-radius: 16px;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%) 1;
     justify-items: center;
 }
 
@@ -154,7 +154,7 @@
     grid-area: botao;
 }
 
-.main__social {
+.main__linkedin {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
     justify-items: center;
@@ -173,14 +173,14 @@
                         "icone-linkedin botao";
 }
 
-.main__social__titulo {
+.main__linkedin__titulo {
     font-family: var(--fonte-principal);
     font-size: 1rem;
     word-spacing: 1px;
     grid-area: titulo;
     font-weight: 800;
 }
-.main__social__texto {
+.main__linkedin__texto {
     font-family: var(--fonte-principal);
     font-size: 1rem;
     font-weight: 400;
@@ -188,12 +188,12 @@
     grid-area: texto;
     text-align: justify;
 }
-.main__social__icone {
+.main__linkedin__icone {
     grid-area: icone-linkedin;
     width: 10rem;
 }
 
-.main__social__url {
+.main__linkedin__url {
     border-radius: 16px;
     background-color: #7B7CF1;
     padding: 1rem;
@@ -203,6 +203,7 @@
     color: var(--cor-primaria);
 }
 
-.main__social__url:hover {
+.main__linkedin__url:hover {
+    opacity: 1;
     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
 }

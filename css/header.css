@@ -20,11 +20,11 @@
 .cabecalho__menu {
     display: flex;
     color: var(--cor-primaria);
+    column-gap: 1rem;
 }
 
 .cabecalho__menu__item {
     font-family: var(--fonte-principal);
-    margin: 0 1rem;
     font-size: 1rem;
 }
 
