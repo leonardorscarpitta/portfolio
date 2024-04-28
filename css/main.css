@@ -5,17 +5,18 @@
     grid-area: main;
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    gap: 4rem;
-    margin-top: 1rem;
+    gap: 3rem;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
 .main__row {
     display: grid;
+    row-gap: 1.5rem;
+    column-gap: 3rem;
     justify-items: center;
     grid-template-columns: 1fr 1.5fr;
-    grid-template-rows: 1fr 2fr 3fr;
+    grid-template-rows: 1fr 2fr 2fr;
     grid-row: 1 / 2;
     grid-column: 1 / 4;
     grid-template-areas: 
@@ -34,15 +35,14 @@
 .main__row__texto {
     font-family: var(--fonte-principal);
     color: var(--cor-secundaria);
-    font-size: 1rem;
-    margin-top: 0.9rem;
+    font-size: 1.2rem;
+    text-align: justify;
     word-spacing: 1px;
     grid-area: texto;
 }
 
 .main__row__icone {
     width: 30rem;
-    margin-top: 2rem;
     grid-area: foto;
 }
 
@@ -55,7 +55,6 @@
 }
 
 .main__linguagens {
-    margin-top: 2rem;
     display: grid;
     justify-items: center;
     grid-area: linguagensUtilizadas;
@@ -82,13 +81,13 @@
 
 .logoLinguagem {
     width: 5rem;
-    margin-top: 2rem;
 }
 
 #main__portfolio {
-    margin-top: 2rem;
+    display: grid;
     grid-row: 2 / 3;
     grid-column: 1 / 4;
+    row-gap: 1.5rem;
 }
 
 .main__portfolio__titulo {
@@ -101,17 +100,14 @@
     font-family: var(--fonte-principal);
     color: var(--cor-secundaria);
     font-size: 1rem;
-    margin-top: 0.9rem;
     word-spacing: 1px;
 }
 
 .main__portfolio__icone {
     width: 30rem;
-    margin-top: 2rem;
 }
 
 .main__portfolio__projetos {
-    margin-top: 1.5rem;
     display: grid;
     grid-template-columns: repeat(3, 33%);
     grid-template-areas: "projeto2 projeto1 projeto";
@@ -180,7 +176,6 @@
 .main__social__titulo {
     font-family: var(--fonte-principal);
     font-size: 1rem;
-    margin-top: 0.9rem;
     word-spacing: 1px;
     grid-area: titulo;
     font-weight: 800;
@@ -189,7 +184,6 @@
     font-family: var(--fonte-principal);
     font-size: 1rem;
     font-weight: 400;
-    margin-top: 0.9rem;
     word-spacing: 1px;
     grid-area: texto;
     text-align: justify;
