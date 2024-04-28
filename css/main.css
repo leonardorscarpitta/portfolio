@@ -87,8 +87,8 @@
 .main__portfolio__projetos {
     margin-top: 1.5rem;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-areas: "projeto1 projeto";
+    grid-template-columns: repeat(3, 33%);
+    grid-template-areas: "projeto2 projeto1 projeto";
 }
 .projeto1 {
     grid-area: projeto1;
@@ -122,8 +122,9 @@
 
 .main__portfolio__projetos__projeto__botao {
     background-color: #010409;
-    font-size: 0.8rem;
-    padding: 0.3rem;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    padding: 0.8rem;
     color: var(--cor-primaria);
     font-weight: 800;
     border-radius: 16px;
@@ -137,7 +138,7 @@
     justify-items: center;
     align-items: center;
     justify-items: center;
-    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    background: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
     padding: 1.5rem;
     border-radius: 18px;
     background-color: rgb(217, 217, 217);
@@ -152,7 +153,6 @@
 
 .main__social__titulo {
     font-family: var(--fonte-principal);
-    color: var(--cor-terciaria);
     font-size: 1rem;
     margin-top: 0.9rem;
     word-spacing: 1px;
@@ -161,8 +161,8 @@
 }
 .main__social__texto {
     font-family: var(--fonte-principal);
-    color: var(--cor-terciaria);
     font-size: 1rem;
+    font-weight: 400;
     margin-top: 0.9rem;
     word-spacing: 1px;
     grid-area: texto;
