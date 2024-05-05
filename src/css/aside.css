@@ -7,7 +7,7 @@
     row-gap: 2rem;
     justify-content: center;
     position: sticky;
-    top: 0px;
+    top: calc(50% - 6.5rem);
     grid-template-areas: 
                         "linkedin"
                         "github"
@@ -21,6 +21,7 @@
 
 .lateral__social__icone:hover {
     opacity: 0.7;
+    box-shadow: #8182dc 0px 5px;
 }
 
 .lateral__social__icone.github {

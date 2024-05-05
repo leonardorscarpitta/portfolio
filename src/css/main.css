@@ -50,7 +50,7 @@
     font-weight: 800;
     font-family: var(--fonte-principal);
     color: var(--cor-primaria);
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     grid-area: titulo;
 }
 
@@ -60,7 +60,8 @@
     grid-area: linguagensUtilizadas;
     grid-template-areas: 
                         "tituloLU tituloLU tituloLU"
-                        "html css js";
+                        "html css js"
+                        "py py py";
 }
 
 .linguagensUtilizadas {
@@ -110,7 +111,7 @@
 .main__portfolio__projetos {
     display: grid;
     grid-template-columns: repeat(3, 33%);
-    grid-template-areas: "projeto2 projeto1 projeto";
+    grid-template-areas: "projeto1 projeto2 projeto3";
 }
 .projeto1 {
     grid-area: projeto1;
@@ -118,43 +119,55 @@
 
 .main__portfolio__projetos__projeto {
     display: grid;
+    padding: 1rem 0;
+    align-items: center;
+    background-color: var(--background-color3);
+    border-radius: 24px;
     grid-template-rows: 7rem 1fr 1fr;
     grid-template-areas: 
-                        "imagem"
-                        "titulo"
-                        "botao";
-
-    padding: 1rem 0;
-    border-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%) 1;
-    justify-items: center;
+                        "ilustracao ilustracao ilustracao"
+                        "icone titulo repositorioBotao"
+                        "descricao descricao descricao";
 }
 
 .main__portfolio__projetos__projeto__texto {
     color: var(--cor-primaria);
     font-family: var(--fonte-principal);
     font-weight: 800;
+    justify-self: start;
     grid-area: titulo;
 }
 
-.main__portfolio__projetos__projeto__imagem {
-    width: 7rem;
-    grid-area: imagem;
+.main__portfolio__projetos__projeto__ilustracao {
+    font-family: var(--fonte-secundaria);
+    color: var(--cor-primaria);
+    font-size: 2rem;
+    font-weight: 800;
+    justify-self: center;
+    grid-area: ilustracao;
+}
+
+.main__portfolio__projetos__projeto__icon {
+    width: 3rem;
+    justify-self: center;
+    grid-area: icone;
 }
 
 .main__portfolio__projetos__projeto__botao {
     background-color: #2B3137; /* COR DO GITHUB */
     background-image: url('/src/assets/github-icon.png');
     background-repeat: no-repeat;
-    background-position: left center;
-    background-size: 2rem;
+    background-position: center;
+    background-size: 1.5rem;
     font-family: var(--fonte-principal);
-    font-size: 1rem;
-    padding: 1rem 0.5rem 1rem 2rem;
+    font-size: 0.5rem;
+    padding: 1rem;
     color: var(--cor-primaria);
-    font-weight: 800;
+    font-weight: 500;
     border-radius: 16px;
+    justify-self: center;
     border: none;
-    grid-area: botao;
+    grid-area: repositorioBotao;
 }
 
 .main__portfolio__projetos__projeto__botao:hover {

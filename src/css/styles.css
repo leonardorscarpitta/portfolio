@@ -3,12 +3,13 @@
 @import url('main.css');
 @import url('aside.css');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
 :root {
     /* PALETA DE CORES DE FUNDO */
     --background-color: #1f1e1e;
     --background-color2: #343434;
+    --background-color3: #18171C;
     /* PALETA DE CORES */
     --cor-primaria: #FAF2E8;
     --cor-secundaria: #CCC3BC;
@@ -16,6 +17,7 @@
     --cor-principal: #8182dc;
     /* FONTES DO PORTFOLIO */
     --fonte-principal: "Kanit", sans-serif;
+    --fonte-secundaria: "Bebas Neue", sans-serif;
 }
 
 body {
