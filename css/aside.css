@@ -1,0 +1,30 @@
+.lateral {
+    grid-area: asidel;
+}
+
+.lateral__social {
+    display: grid;
+    row-gap: 2rem;
+    justify-content: center;
+    position: sticky;
+    top: 0px;
+    grid-template-areas: 
+                        "linkedin"
+                        "github"
+                        "instagram";
+}
+
+.lateral__social__icone {
+    width: 3rem;
+    height: 3rem;
+}
+
+.lateral__social__icone.github {
+    grid-area: github;
+}
+.lateral__social__icone.instagram {
+    grid-area: instagram;
+}
+.lateral__social__icone.linkedin {
+    grid-area: linkedin;
+}
