@@ -119,30 +119,28 @@
 
 .main__portfolio__projetos__projeto {
     display: grid;
+    row-gap: 1rem;
     padding: 1rem 0;
     align-items: center;
     background-color: var(--background-color3);
     border-radius: 24px;
     grid-template-rows: 7rem 1fr 1fr;
     grid-template-areas: 
-                        "ilustracao ilustracao ilustracao"
-                        "icone titulo repositorioBotao"
-                        "descricao descricao descricao";
+                        "ilustracao ilustracao"
+                        "titulo linguagens"
+                        "repositorioBotao repositorioBotao";
 }
 
 .main__portfolio__projetos__projeto__texto {
     color: var(--cor-primaria);
     font-family: var(--fonte-principal);
     font-weight: 800;
-    justify-self: start;
+    justify-self: center;
     grid-area: titulo;
 }
 
 .main__portfolio__projetos__projeto__ilustracao {
-    font-family: var(--fonte-secundaria);
-    color: var(--cor-primaria);
-    font-size: 2rem;
-    font-weight: 800;
+    width: 15rem;
     justify-self: center;
     grid-area: ilustracao;
 }
@@ -157,11 +155,11 @@
     background-color: #2B3137; /* COR DO GITHUB */
     background-image: url('/src/assets/github-icon.png');
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: left center;
     background-size: 1.5rem;
     font-family: var(--fonte-principal);
-    font-size: 0.5rem;
-    padding: 1rem;
+    font-size: 0.8rem;
+    padding: 1rem 1rem 1rem 2rem;
     color: var(--cor-primaria);
     font-weight: 500;
     border-radius: 16px;
@@ -173,4 +171,19 @@
 .main__portfolio__projetos__projeto__botao:hover {
     opacity: 0.7;
     box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.main__portfolio__projetos__projeto__linguagens {
+    display: flex;
+    grid-area: linguagens;
+    justify-self: center;
+}
+
+.main__portfolio__projetos__projeto__linguagens-linguagem {
+    color: var(--cor-secundaria);
+    font-weight: 600;
+    font-family: var(--fonte-secundaria);
+    border-radius: 14px;
+    background-color: var(--background-color2);
+    padding: 0.4rem;
 }
