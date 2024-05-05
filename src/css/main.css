@@ -11,6 +11,7 @@
 }
 
 .main__row {
+    align-items: center;
     display: grid;
     row-gap: 1.5rem;
     column-gap: 3rem;
@@ -61,7 +62,7 @@
     grid-template-areas: 
                         "tituloLU tituloLU tituloLU"
                         "html css js"
-                        "py py py";
+                        "py figma git";
 }
 
 .linguagensUtilizadas {
@@ -80,6 +81,18 @@
     grid-area: js;
 }
 
+.py {
+    grid-area: py;
+}
+
+.figma {
+    grid-area: figma;
+}
+
+.git {
+    grid-area: git;
+}
+
 .logoLinguagem {
     width: 5rem;
 }
@@ -95,6 +108,7 @@
     font-family: var(--fonte-principal);
     color: var(--cor-primaria);
     font-size: 2rem;
+    font-weight: 800;
 }
 
 .main__portfolio__texto {
