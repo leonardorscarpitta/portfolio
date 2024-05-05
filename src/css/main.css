@@ -143,9 +143,13 @@
 
 .main__portfolio__projetos__projeto__botao {
     background-color: #2B3137; /* COR DO GITHUB */
+    background-image: url('/src/assets/github-icon.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 2rem;
     font-family: var(--fonte-principal);
     font-size: 1rem;
-    padding: 0.8rem;
+    padding: 1rem 0.5rem 1rem 2rem;
     color: var(--cor-primaria);
     font-weight: 800;
     border-radius: 16px;
