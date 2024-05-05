@@ -45,7 +45,3 @@ strong {
 * {
     transition: all .3s;
 }
-
-a:hover {
-    opacity: 0.6;
-}

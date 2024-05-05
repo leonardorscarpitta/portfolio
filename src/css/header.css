@@ -24,8 +24,14 @@
 }
 
 .cabecalho__menu__item {
+    padding-bottom: 1rem;
     font-family: var(--fonte-principal);
     font-size: 1rem;
+}
+
+.cabecalho__menu__item:hover {
+    opacity: 0.8;
+    box-shadow: #8182dc 0px 5px;
 }
 
 .cabecalho__menu__item a {
