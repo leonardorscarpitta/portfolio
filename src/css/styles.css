@@ -6,8 +6,10 @@
 
 
 :root {
+    /* PALETA DE CORES DE FUNDO */
+    --background-color: #1f1e1e;
+    --background-color2: #343434;
     /* PALETA DE CORES */
-    --background-color: linear-gradient(to right, #434343 0%, black 100%);
     --cor-primaria: #FAF2E8;
     --cor-secundaria: #CCC3BC;
     --cor-terciaria: #eeeeee;
