@@ -7,10 +7,11 @@
 
 :root {
     /* PALETA DE CORES */
-    --background-color: linear-gradient(91.7deg, rgb(50, 25, 79) -4.3%, rgb(122, 101, 149) 101.8%);
+    --background-color: linear-gradient(to right, #434343 0%, black 100%);
     --cor-primaria: #FAF2E8;
     --cor-secundaria: #CCC3BC;
     --cor-terciaria: #eeeeee;
+    --cor-principal: #8182dc;
     /* FONTES DO PORTFOLIO */
     --fonte-principal: "Kanit", sans-serif;
 }
@@ -24,7 +25,7 @@ strong {
 }
 
 #dark {
-    color: #EE145B;
+    color: var(--cor-principal);
 }
 
 #light {

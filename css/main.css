@@ -125,7 +125,6 @@
                         "botao";
 
     padding: 1rem 0;
-    border-bottom: 2px solid;
     border-image: linear-gradient(to top, #c471f5 0%, #fa71cd 100%) 1;
     justify-items: center;
 }
@@ -143,7 +142,7 @@
 }
 
 .main__portfolio__projetos__projeto__botao {
-    background-color: #010409;
+    background-color: #2B3137; /* COR DO GITHUB */
     font-family: var(--fonte-principal);
     font-size: 1rem;
     padding: 0.8rem;
@@ -195,7 +194,7 @@
 
 .main__linkedin__url {
     border-radius: 16px;
-    background-color: #7B7CF1;
+    background-color: var(--cor-principal);
     padding: 1rem;
     border: none;
     font-family: var(--fonte-principal);

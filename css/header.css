@@ -35,7 +35,7 @@
 
 .cabecalho__curriculo {
     border-radius: 16px;
-    background-color: #7B7CF1;
+    background-color: var(--cor-principal);
     padding: 1rem;
     border: none;
     font-family: var(--fonte-principal);
