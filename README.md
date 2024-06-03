@@ -11,8 +11,6 @@ Esse é um projeto de portfólio desenvolvido com HTML e CSS! O projeto refletir
 - Home
 - Sobre mim
 - Portfolio
-- Social
-- Projeto: Informações do projeto, como repositório do GitHub, paleta de cores, etc.
 
 # 📌 **Funcionalidades**:
 ![JS](https://img.shields.io/badge/JS-%23071329?style=flat&logo=javascript&logoColor=%23F7DF1E)

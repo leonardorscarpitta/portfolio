@@ -3,70 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - LRS</title>
     <link rel="stylesheet" href="./src/css/styles.css">
-    <title>Portfolio</title>
 </head>
 <body>
-    <section id="pagina">
+    <header>
+        <img src="./src/assets/javaicon.png">
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-        <header class="cabecalho">
-            <div class="cabecalho__titulos">
-                <h2 class="cabecalho__titulo">Portfolio</h2>
-                <h2 class="cabecalho__subtitulo">FrontEnd</h2>
-            </div>
-            <nav class="cabecalho__menu">
-                <li class="cabecalho__menu__item"><a href="#">Sobre Mim</a></li>
-                <li class="cabecalho__menu__item"><a href="#main__portfolio">Portfolio</a></li>
-                <li class="cabecalho__menu__item"><a href="#">Social</a></li>
-                <li class="cabecalho__menu__item projeto"><a href="#">Projeto</a></li>
-            </nav>
-            <a class="cabecalho__curriculo" href="./src/assets/cv_leonardorscarpitta.pdf" download>&#9741; Baixar CV</a>
-        </header>
-
-        <main class="main">
-            <section class="main__row">
-                <h1 class="main__row__titulo"><strong id="dark">Leonardo</strong> Rocha Scarpitta</h1>
-                <p class="main__row__texto">Olá! Fico feliz que você tenha se interessado em ver meu portfólio, no momento estou estudando para me tornar um <strong id="dark">Desenvolvedor Front-End</strong>! Tenho conhecimento de que será uma longa jornada e cheia de obstáculos que eu estou disposto a enfrentar, atualmente estou focando meus estudos para <strong id="light">JavaScript, HTML e CSS</strong>!</p>
-                <img class="main__row__foto" src="./src/assets/front-end.svg" alt="foto - leonardo rocha scarpitta">
-                <div class="main__linguagens">
-                    <p class="main__linguagens__destaques linguagensUtilizadas">Linguagens e tecnologias Utilizadas</p>
-                    <img class="logoLinguagem css" src="./src/assets/css-icon.png" alt="logo do css">
-                    <img class="logoLinguagem html" src="./src/assets/html5-icon.png" alt="logo do html">
-                    <img class="logoLinguagem js" src="./src/assets/js-icon.png" alt="logo do javascript">
-                    <img class="logoLinguagem py" src="./src/assets/py-icon.png" alt="logo do python">
-                    <img class="logoLinguagem figma" src="./src/assets/figma-icon.png" alt="logo do figma">
-                    <img class="logoLinguagem git" src="./src/assets/git-icon.png" alt="logo do git">
-                </div>
-            </section>
-            
-            <section id="main__portfolio">
-                <h2 class="main__portfolio__titulo">Portfolio</h2>
-                <p class="main__portfolio__texto">Verifique abaixo alguns projetos que eu desenvolvi como um <strong id="light">Front-End Developer!</strong></p>
-                <div class="main__portfolio__projetos">
-
-                    <div class="main__portfolio__projetos__projeto projeto1">
-                        <img src="./src/assets/portfolio-pic.png" class="main__portfolio__projetos__projeto__ilustracao">
-                        <p class="main__portfolio__projetos__projeto__texto">Portfolio</p>
-                        <div class="main__portfolio__projetos__projeto__linguagens">
-                            <p class="main__portfolio__projetos__projeto__linguagens-linguagem">HTML</p>
-                            <p class="main__portfolio__projetos__projeto__linguagens-linguagem">CSS</p>
-                        </div>
-                        <a target=”_blank” class="main__portfolio__projetos__projeto__botao" href="https://github.com/leonardorscarpitta/portfolio">Repositório</a>
-                    </div>
-                    
-                </div>
-            </section>
-            
-        </main>
-
-        <aside class="lateral">
-            <div class="lateral__social">
-                <a target=”_blank” rel=”noopener” href="https://github.com/leonardorscarpitta"><img class="lateral__social__icone github" src="./src/assets/github-icon.png"></a>
-                <a target=”_blank” rel=”noopener” href="https://www.instagram.com/leonardo.rscarpitta/"><img class="lateral__social__icone instagram" src="./src/assets/instagram-icon.png"></a>
-                <a target=”_blank” rel=”noopener” href="https://www.linkedin.com/in/leonardo-rocha-scarpitta-26a28629b/"><img class="lateral__social__icone linkedin" src="./src/assets/linkedin-icon.png"></a>
-            </div>
-        </aside>
-
+    <section id="about" class="hero">
+        <div class="container">
+            <h1>Desenvolvedor <java>Backend Java</java></h1>
+            <p>Olá! Seja muito bem-vindo(a) ao meu portfólio, decidi colocar aqui alguns dos meus principais projetos, considerando que com o desenvolvimento back-end não posso atrair sua atenção com a beleza, deixei bem simples para ficar de uma maneira bem intuitiva e direta, os projetos que eu desenvolvi. <br>
+            Sou o <java>Leonardo</java>, estudo desenvolvimento <java>Java</java>, busco sempre me atualizar com as demandas do mercado e as atualizações das ferramentas que utilizo, se eu pudesse me descrever em três softskills, com certeza seriam: <softskills>Proatividade</softskills>, <softskills>Criatividade</softskills> e <softskills>Facilidade em Trabalhar em grupos</softskills>!</p>
+            <img src="./src/assets/javaicon.png">
+        </div>
     </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Projetos</h2>
+            <div class="project-list">
+                <div class="project-item">
+                    <h3>Projeto 1</h3>
+                    <p>Descrição breve do Projeto 1.</p>
+                    <a href="project1.html" class="project-link">Repositório</a>
+                </div>
+                <div class="project-item">
+                    <h3>Projeto 2</h3>
+                    <p>Descrição breve do Projeto 2.</p>
+                    <a href="project2.html" class="project-link">Repositório</a>
+                </div>
+                <div class="project-item">
+                    <h3>Projeto 3</h3>
+                    <p>Descrição breve do Projeto 3.</p>
+                    <a href="project3.html" class="project-link">Repositório</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Redes Sociais para Contato</h2>
+            <div class="social-links">
+                <a href="#"><img src="./src/assets/linkedin.png" alt="logo do LinkedIn"></a>
+                <a href="#"><img src="./src/assets/github.png" alt="logo do GitHub"></a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 - Desenvolvido por Leonardo Rocha Scarpitta, utilizando HTML e CSS puros.</p>
+    </footer>
+
+    <script src="./src/js/script.js"></script>
 </body>
 </html>

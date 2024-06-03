@@ -1,51 +1,281 @@
-@import url('reset.css');
-@import url('header.css');
-@import url('main.css');
-@import url('aside.css');
-@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url("config.css");
+@import url("footer.css");
+@import url("header.css");
+@import url("main.css");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 :root {
-    /* PALETA DE CORES DE FUNDO */
-    --background-color: #1f1e1e;
-    --background-color2: #343434;
-    --background-color3: #18171C;
-    /* PALETA DE CORES */
-    --cor-primaria: #FAF2E8;
-    --cor-secundaria: #CCC3BC;
-    --cor-terciaria: #eeeeee;
-    --cor-principal: #8182dc;
-    /* FONTES DO PORTFOLIO */
-    --fonte-principal: "Kanit", sans-serif;
-    --fonte-secundaria: "Bebas Neue", sans-serif;
+    /* Padronização da paleta de cores */
+    --orange-java: #F89820;
+    --blue-java: #5382A1;
+    /* Padronização da fonte */
+    --default-font: "Inter", sans-serif;
+    --programming-font: "JetBrains", monospace;
+    /* Padronização do BG */
+    --bg-2: white;
+    --bg-3: radial-gradient(circle at 18.7% 37.8%, rgb(250, 250, 250) 0%, rgb(225, 234, 238) 90%);
+}
+
+/* Animações */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+java {
+    font-weight: 800;
+    color: var(--orange-java);
+}
+
+softskills {
+    font-weight: 800;
+    color: var(--blue-java);
 }
 
 body {
-    background: var(--background-color);
+    font-family: var(--default-font);
+    margin: 0;
+    padding: 0;
+    background: var(--bg-2);
+    color: var(--bg-3);
 }
 
-strong {
+/* Animações */
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+java {
     font-weight: 800;
+    color: var(--orange-java);
 }
 
-#dark {
-    color: var(--cor-principal);
+softskills {
+    font-weight: 800;
+    color: var(--blue-java);
 }
 
-#light {
-    color: white;
-    font-weight: 500;
+body {
+    font-family: var(--default-font);
+    margin: 0;
+    padding: 0;
+    background: var(--bg-2);
+    color: var(--bg-3);
 }
 
-#pagina {
+/* Responsividade */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0 1em;
+    }
+
+    nav {
+        margin-top: 1em;
+    }
+
+    .project-item {
+        width: 100%;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2em;
+}
+
+h1 {
+    font-family: var(--programming-font);
+}
+
+.project-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+}
+
+.project-item h3 {
+    font-size: 1.5em;
+    color: var(--bg-3);
+}
+
+.project-item p {
+    font-size: 1em;
+    color: var(--bg-3);
+    margin-bottom: 1em;
+}
+
+.project-link {
+    color: var(--blue-java);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project-link:hover {
+    color: var(--orange-java);
+}
+
+.contact {
+    text-align: center;
+    padding: 2em 0;
+    background: #f8f9fa;
+    border-top: 1px solid #e5e5e5;
+}
+
+.contact h2 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: black;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.social-links a img {
+    width: 3rem;
+}
+
+.social-links img:hover {
+    opacity: 0.7;
+}
+#about .container {
     display: grid;
-    grid-template-columns: 1fr 8fr 1fr;
-    grid-template-areas:
-                        "header header header"
-                        "asidel main asider"
-                        "footer footer footer";
+    grid-template-columns: repeat(2,1fr);
+    row-gap: 0rem;
+    grid-template-areas: 
+                        "titulo logoJava"
+                        "p logoJava"
 }
 
-* {
-    transition: all .3s;
+#about .container h1 {
+    grid-area: titulo;
+}
+#about .container p {
+    grid-area: p;
+    font-size: 1rem;
+}
+#about .container img {
+    grid-area: logoJava;
+}
+
+.hero {
+    text-align: center;
+    padding: 4em 0;
+    background: #f8f9fa;
+    margin-bottom: 2em;
+    animation: fadeIn 1s ease-in-out;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #222;
+}
+
+.hero p {
+    font-size: 1.2em;
+    color: var(--bg-3);
+}
+
+.projects {
+    padding: 2em 0;
+    background: var(--bg-2);
+}
+
+.projects h2 {
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    color: #222;
+}
+
+.project-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.project-item {
+    background: #f8f9fa;
+    padding: 2em;
+    margin: 1em;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    width: 30%;
+    animation: slideUp 0.5s ease-in-out;
+}
+
+header {
+    background: var(--bg-2);
+    padding: 1rem;
+    border-bottom: 1px solid #e5e5e5;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    top: 0px;
+    position: sticky;
+}
+
+header img {
+    width: 4rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 2em;
+    justify-content: flex-start;
+}
+
+nav a {
+    color: var(--bg-3);
+    text-decoration: none;
+    font-weight: 800;
+    transition: color 0.3s;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: var(--blue-java);
+}
+
+footer {
+    background: var(--bg-2);
+    color: var(--bg-3);
+    padding: 1em 0;
+    text-align: center;
+    border-top: 1px solid #e5e5e5;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
 }
